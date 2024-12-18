@@ -1,11 +1,11 @@
-"use client";
-import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
+  console.log("home");
+
   return (
     <div className="flex gap-2 p-4">
-      <div className="capitalize text-red-500">hello world: </div>
-      <Button onClick={() => console.log("println!")}>click me</Button>
+      <ModeToggle />
     </div>
   );
 }
